@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  #textDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 50vh;
+    background-color: #4287f5;
+    color: white;
+    margin-top: 2rem;
+  }
+
+  #editArea {
+    display: none;
+    width: 50vw;
+    height: 40vh;
+    margin-top: 2rem;
+  }
+
+  #saveButton {
+    display: none;
+    width: 150px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: large;
+  }
+}

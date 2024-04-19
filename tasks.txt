@@ -1,0 +1,2 @@
+1. Create a functional calculator; it should be able to subtract, sum, divide and multiple numbers. Also every symbol must be shown on the screen
+2. Create a song list generator; User should be able to input song name, artist and runtime. Also should be able to delete song from list and see runtime in details below song name and artist when clicking on the row. See example below:

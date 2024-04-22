@@ -30,8 +30,7 @@ body {
   padding: 32px 32px 0pc 32px;
 }
 
-.calculator__main-display,
-.calculator__help-display {
+.calculator__main-display {
   font-size: 2.3rem;
   text-align: right;
   background: #cdcdcd;
@@ -40,11 +39,6 @@ body {
   border: none;
   padding-left: 4px;
   padding-right: 4px;
-}
-
-.calculator__help-display {
-  font-size: 1.3rem;
-  color: gray;
 }
 
 input[type="text"] {
@@ -74,7 +68,7 @@ input[type="text"] {
 }
 
 /* main section with buttons */
-.button {
+.buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;

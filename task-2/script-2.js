@@ -1,27 +1,27 @@
 function addSong() {
-  var songName = document.getElementById("songName").value;
-  var artist = document.getElementById("artist").value;
-  var runtime = document.getElementById("runtime").value;
+  const songName = document.getElementById("songName").value;
+  const artist = document.getElementById("artist").value;
+  const runtime = document.getElementById("runtime").value;
 
   if (songName.trim() === "" || artist.trim() === "" || runtime.trim() === "") {
     alert("Please fill in all fields");
     return;
   }
 
-  var table = document
+  let table = document
     .getElementById("songTable")
     .getElementsByTagName("tbody")[0];
-  var newRow = table.insertRow();
+  let newRow = table.insertRow();
 
-  var cell1 = newRow.insertCell(0);
-  var cell2 = newRow.insertCell(1);
-  var cell3 = newRow.insertCell(2);
-  var cell4 = newRow.insertCell(3);
+  let cell1 = newRow.insertCell(0);
+  let cell2 = newRow.insertCell(1);
+  let cell3 = newRow.insertCell(2);
+  let cell4 = newRow.insertCell(3);
 
   cell1.innerHTML = songName;
   cell2.innerHTML = artist;
   cell3.innerHTML = runtime;
-  cell4.innerHTML = '<button onclick="deleteSong(this)">Delete</button>';
+  cell4.innerHTML = '<button class="btn-del" onclick="deleteSong(this)">Delete</button>';
 
   document.getElementById("songName").value = "";
   document.getElementById("artist").value = "";
@@ -29,18 +29,18 @@ function addSong() {
 }
 
 function deleteSong(button) {
-  var row = button.parentNode.parentNode;
+  let row = button.parentNode.parentNode;
   row.parentNode.removeChild(row);
 }
 
 document
   .getElementById("songTable")
   .addEventListener("click", function (event) {
-    var target = event.target;
+    let target = event.target;
     if (target.tagName === "TD") {
-      var songName = target.parentNode.cells[0].textContent;
-      var artist = target.parentNode.cells[1].textContent;
-      var runtime = target.parentNode.cells[2].textContent;
+      let songName = target.parentNode.cells[0].textContent;
+      let artist = target.parentNode.cells[1].textContent;
+      let runtime = target.parentNode.cells[2].textContent;
       document.getElementById("details").innerHTML =
         "Details: Song Name - " +
         songName +

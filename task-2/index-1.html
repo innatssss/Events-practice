@@ -9,22 +9,21 @@
     <script defer src="./script-2.js"></script>
   </head>
   <body>
-    <h2>Song List Generator</h2>
-
-    <div>
+    <h2 class="animate-charcter">Song List Generator</h2>
+    <div class="name">
       <label for="songName">Song Name:</label>
       <input type="text" id="songName" />
     </div>
-    <div>
+    <div class="artist">
       <label for="artist">Artist:</label>
       <input type="text" id="artist" />
     </div>
-    <div>
-      <label for="runtime">Runtime (in seconds):</label>
+    <div class="time">
+      <label for="runtime">Runtime:</label>
       <input type="number" id="runtime" />
     </div>
-    <div>
-      <button onclick="addSong()">Add Song</button>
+    <div class="btn-cont">
+      <button class="btnAddSong" onclick="addSong()">Add Song</button>
     </div>
     <table id="songTable">
       <thead>
